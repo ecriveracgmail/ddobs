@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Observatorio Nacional</title>
+  <base href="./">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <!--link href="assets/img/brand/favicon.png" rel="icon" type="image/png"-->
+  <link rel="shortcut icon" href="https://www.democraciadigital.pe/sites/default/files/favicon-democracia.jpg" type="image/jpeg">
+  <!-- CSS Files -->
+  <link href="assets/css/argon-dashboard.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="styles.3fbe7438252fb099ae63.css"></head>
+<body>
+
+    <app-root></app-root>
+  <div id="alerthorizontal" style="display: none;"> 
+      <img src="assets/images/mobile-rotate.png" alt="">
+    </div>
+  <!--   Core   -->
+  <script src="assets/js/plugins/jquery/dist/jquery.min.js"></script>
+  <script src="assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--   Argon JS   -->
+  <script src="assets/js/argon-dashboard.min.js"></script>
+  <script>
+    window.onload = function(){
+      if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        if(window.screen.orientation.type === "landscape-primary"){
+          $('#alerthorizontal').css('display','flex');
+        }
+        if(window.screen.orientation.type === "landscape-secondary"){
+          $('#alerthorizontal').css('display','flex');
+        }
+      }
+    };
+    $(window).on( "orientationchange", function( event ) {
+      if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+        if(window.screen.orientation.type === "landscape-primary"){
+          $('#alerthorizontal').css('display','flex');
+        } else if(window.screen.orientation.type === "landscape-secondary"){
+          $('#alerthorizontal').css('display','flex');
+        } else{
+          $('#alerthorizontal').css('display','none');
+        }
+      }
+    });
+  </script>
+<script src="runtime-es2015.b2aca5be9e7b8cc1a1b4.js" type="module"></script><script src="polyfills-es2015.ea0b157604635cc18f29.js" type="module"></script><script src="runtime-es5.a6586930f507951256e4.js" nomodule></script><script src="polyfills-es5.6771e5dc66d16d4ca77d.js" nomodule></script><script src="scripts.d166cef3882d735b5181.js"></script><script src="main-es2015.2e237c927db4e7600b44.js" type="module"></script><script src="main-es5.6b9039d70f55e32b0957.js" nomodule></script></body>
+</html>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-49401769-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>

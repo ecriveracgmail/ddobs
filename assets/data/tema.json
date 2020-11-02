@@ -1,0 +1,22 @@
+[
+    { 
+        "name" : "Sociedad",
+        "value" : "Sociedad"
+    },
+    { 
+        "name" : "Cultura",
+        "value" : "Cultura"
+    },
+    { 
+        "name" : "Gobernabilidad y política",
+        "value" : "Gobernabilidad y política"
+    },
+    { 
+        "name" : "Educación",
+        "value" : "Educación"
+    },
+    { 
+        "name" : "Salud",
+        "value" : "Salud"
+    }
+]
